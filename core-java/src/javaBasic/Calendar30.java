@@ -10,7 +10,7 @@ public class Calendar30 {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Calendar c = Calendar.getInstance();
 		for (int i = 1; i <= 12; i++) {
-			c.add(Calendar.DATE, 1);
+			c.add(Calendar.DATE, 30);
 			System.out.println(sdf.format(c.getTime()));
 		}
 

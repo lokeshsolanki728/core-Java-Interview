@@ -10,7 +10,5 @@ public class EvenOddNo {
 		} else {
 			System.out.println("is odd no");
 		}
-
 	}
-
 }
