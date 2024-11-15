@@ -14,9 +14,12 @@ public class InterfaceTest implements Interfacee,Interface2{
 
 	public static void main(String[] args) {
 
-		InterfaceTest b = new InterfaceTest();
+		Interfacee b = new InterfaceTest();
 		System.out.println(b.sum(10, 20));
-		System.out.println(b.sum(11, 22, 33));
-		System.out.println(b.x);
+		//System.out.println(b.sum(11, 22, 33));
+		System.out.println(b.a);
+		Interface2 bb = new InterfaceTest();
+		System.out.println(bb.sum(1, 2, 4));
+		
 	}
 }

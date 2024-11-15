@@ -3,7 +3,7 @@ package com.oop.implicitexplicit;
 public class ExplicitTest extends Explicit {
 
 	public ExplicitTest(String name) {
-		super(name);//unresoled compilation err
+		super(name); 
 	}
 
 	public static void main(String[] args) {
