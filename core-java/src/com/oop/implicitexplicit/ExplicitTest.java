@@ -7,7 +7,7 @@ public class ExplicitTest extends Explicit {
 	}
 
 	public static void main(String[] args) {
-		ExplicitTest e = new ExplicitTest("kapil");
+		ExplicitTest e = new ExplicitTest("lokesh");
 	}
 
 }

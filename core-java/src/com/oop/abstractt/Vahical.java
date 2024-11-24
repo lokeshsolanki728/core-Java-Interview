@@ -12,7 +12,7 @@ public abstract class Vahical {
 	abstract void strat();
 
 	public void getInfo() {
-		System.out.println("car speed is " + speed);
-		System.out.println("car brand is " + brand);
+		System.out.println("Vahical speed is " + speed);
+		System.out.println("Vahical brand is " + brand);
 	}
 }
