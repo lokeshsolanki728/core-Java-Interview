@@ -4,7 +4,7 @@ public class Car extends Vahical {
 
 	@Override
 	void strat() {
-		System.out.println("car engin starts");
+		System.out.println("car engine starts");
 	}
 
 	public Car(String brand, int speed) {

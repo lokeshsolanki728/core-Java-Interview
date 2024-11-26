@@ -1,5 +1,10 @@
 package com.oop.deepcloning;
 
+/**
+ * @author lokesh solanki
+ * in this class sir first remove the c.cone method and then remove
+ * Costumer class's no.clone() and ask the output
+ */
 public class TestDeep {
 	public static void main(String[] args) throws CloneNotSupportedException  {
 

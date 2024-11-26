@@ -1,5 +1,9 @@
 package com.oop.shellowcloning;
 
+/**
+ * @author lokesh solanki
+ * in this class sir remove the s.clone method and ask the ans
+ */
 public class ShellowClonigTest {
 	public static void main(String[] args) throws CloneNotSupportedException {
 

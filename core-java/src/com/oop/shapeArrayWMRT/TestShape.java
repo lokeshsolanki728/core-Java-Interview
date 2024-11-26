@@ -1,5 +1,9 @@
 package com.oop.shapeArrayWMRT;
 
+/**
+ * @author lokesh solanki
+ * the class full name is Shape Array with method return type
+ */
 public class TestShape {
 	public static void main(String[] args) {
 

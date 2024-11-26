@@ -1,6 +1,11 @@
 
 package com.oop.shapeArrayWOC;
 
+/**
+ * @author lokesh solanki
+ *the class full name is Shape Array without constructor
+ *insted of constructor we use getter and setter 
+ */
 public class TestShape {
 
 	public static void main(String[] args) {
