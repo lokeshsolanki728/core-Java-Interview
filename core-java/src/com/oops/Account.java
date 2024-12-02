@@ -1,3 +1,5 @@
+
+
 package com.oops;
 
 public class Account {
@@ -12,32 +14,32 @@ public class Account {
 		this.balance = balance;
 	}
 
-	public void Deposite(int amt) {
+	public void deposite(int amt) {
 
-		System.out.println("Total balance" + balance);
-		System.out.println("Deposite Amt" + amt);
+//		System.out.println("Total balance" + balance);
+//		System.out.println("Deposite Amt" + amt);
 		balance = balance + amt;
 		System.out.println("After Deposite Amt" + balance);
 	}
 
-	public void Withdrawal(int amt) {
+	public void withdrawal(int amt) {
 
-		if (balance > amt) {
+		if ((balance - 2000) < amt) {
+			System.out.println("low balance");
+		} else {
+
 			System.out.println("Total balance" + balance);
 			System.out.println("Withdrawl Amt" + amt);
 			balance = balance - amt;
 			System.out.println("After Withdrawl Amt" + balance);
-		} else {
-
-			System.out.println("pese nin h");
 		}
 	}
 
 	public static void main(String[] args) {
 		Account ac = new Account();
 		ac.setBalance(2000);
-		ac.Deposite(500);
-		ac.Withdrawal(10000);
+		ac.deposite(500);
+		ac.withdrawal(100);
 	}
 
 }

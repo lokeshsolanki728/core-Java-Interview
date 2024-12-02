@@ -16,12 +16,14 @@ public class ListInterface {
 		list.add(400);
 
 		System.out.println(list.get(2));
-		System.out.println(list.equals(list));
-		System.out.println(list.hashCode());
-		System.out.println(list.indexOf(200));
-		System.out.println(list.subList(2, 4));
+		list.add(2, 222);
+		list.add(33);
 		
+	
+		System.out.println(list.indexOf(222));
+		System.out.println(list.subList(2, 4));
 
+		System.out.println(list);
 		System.out.println("=====================================");
 
 		LinkedList l = new LinkedList();
@@ -30,16 +32,18 @@ public class ListInterface {
 		l.add(20);
 		l.add(30);
 		l.add(40);
-		
+
 		System.out.println(l.element());
 		System.out.println(l.getFirst());
 		System.out.println(l.getLast());
 		System.out.println(l.peek() + "pekkkk");
+		System.out.println(l);
 		System.out.println(l.peekFirst());
+		System.out.println(l);
 		System.out.println(l.peekLast());
 
 		System.out.println(l.offer(l));
-
+		System.out.println(l);
 		System.out.println(l.offerFirst(120));
 		System.out.println(l.offerLast(150));
 
@@ -66,7 +70,7 @@ public class ListInterface {
 		v.add(50);
 		v.add(100);
 		v.add(150);
-		//v.add(200);
+		// v.add(200);
 
 		System.out.println(v.elementAt(2));
 		System.out.println(v.subList(1, 3));

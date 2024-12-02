@@ -2,7 +2,7 @@ package com.somethingnew;
 
 public class WordWithNoVowel {
 	public static void main(String[] args) {
-		String str[] = { "she", "cry", "he", "dry" };
+		String str[] = { "she", "he", "why", "dry" };
 		for (String str1 : str) {
 			boolean flag = true;
 			for (int i = 0; i < str1.length(); i++) {
@@ -10,7 +10,7 @@ public class WordWithNoVowel {
 					flag = false;
 				}
 			}
-			if(flag) {
+			if (flag) {
 				System.out.println(str1);
 			}
 		}
