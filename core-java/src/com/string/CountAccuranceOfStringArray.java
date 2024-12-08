@@ -3,7 +3,7 @@ package com.string;
 public class CountAccuranceOfStringArray {
 
 	public static void main(String[] args) {
-		String [] name = {"Shieeevani","Dubee"};
+		String [] name = {"Shivaaaaannni","Dubee"};
 		for (char ch = 'a'; ch < 'z'; ch++) {
 			int count = 0;
 			for(String n :name)

@@ -10,6 +10,7 @@ public class EqualHashCodeTest {
 			if (e1.hashCode() == e2.hashCode()) {
 				System.out.println("Equals");
 			}
+			System.out.println("Equals");
 		} else {
 			System.out.println("Not Equals");
 		}
