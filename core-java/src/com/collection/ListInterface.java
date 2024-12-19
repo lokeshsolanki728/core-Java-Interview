@@ -18,8 +18,7 @@ public class ListInterface {
 		System.out.println(list.get(2));
 		list.add(2, 222);
 		list.add(33);
-		
-	
+
 		System.out.println(list.indexOf(222));
 		System.out.println(list.subList(2, 4));
 
