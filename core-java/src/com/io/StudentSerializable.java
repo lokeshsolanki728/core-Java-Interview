@@ -9,7 +9,6 @@ public class StudentSerializable implements Serializable {
 	public String name;
 
 	
-
 	public StudentSerializable(int id, String name) {
 
 		this.id = id;

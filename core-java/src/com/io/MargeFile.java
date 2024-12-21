@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class MargeFile {
-
+ 
 	public static void main(String[] args) throws IOException {
 
 		FileWriter fw = new FileWriter("C:\\Users\\lokesh solanki\\Desktop\\IO\\marge.txt");

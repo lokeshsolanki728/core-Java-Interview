@@ -12,7 +12,7 @@ public class StudentExternalizable implements Externalizable {
 	public String name;
 
 	public StudentExternalizable() {
-		// TODO Auto-generated constructor stub
+		System.out.println("okokok");
 	}
 
 	public StudentExternalizable(int id, String name) {
