@@ -7,7 +7,6 @@ public class TestFunctionalIntWithLemda {
 		FunctionalInt f = (a, b) -> {
 			return a * b;
 		};
-
 		int a = 10;
 		int b = 5;
 

@@ -15,8 +15,8 @@ public class PairsWithTargetSum {
     }
 
     public static void main(String[] args) {
-        int[] array = {2, 4, 3, 7, 5, -1};
-        int target = 6;
+        int[] array = {-2, 4, 3, 7, 5, -1,6};
+        int target = 4;
         findPairs(array, target);
     }
 }

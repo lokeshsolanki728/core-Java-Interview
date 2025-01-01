@@ -17,6 +17,7 @@ public class ReadAndWritePrimitiveData {
 		out.writeDouble(45.25);
 		out.writeChar('A');
 		out.writeFloat(2.2F);
+		
 
 		out.close();
 

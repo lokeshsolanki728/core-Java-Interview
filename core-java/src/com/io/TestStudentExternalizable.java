@@ -11,13 +11,11 @@ public class TestStudentExternalizable {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
 		StudentExternalizable s = new StudentExternalizable(10, "lokeshhhhh");
-
-		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("C:\\Users\\lokesh solanki\\Desktop\\IO\\Internlization.txt"));
-
+		ObjectOutputStream out = new ObjectOutputStream(
+				new FileOutputStream("C:\\Users\\lokesh solanki\\Desktop\\IO\\Internlization.txt"));
 		out.writeObject(s);
-
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\Users\\lokesh solanki\\Desktop\\IO\\Internlization.txt"));
-
+		ObjectInputStream in = new ObjectInputStream(
+				new FileInputStream("C:\\Users\\lokesh solanki\\Desktop\\IO\\Internlization.txt"));
 		s = (StudentExternalizable) in.readObject();
 
 		System.out.println(s.getId());

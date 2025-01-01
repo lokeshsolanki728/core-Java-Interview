@@ -36,7 +36,7 @@ public class TypePramotion {
 
 	public static void main(String[] args) {
 		TypePramotion t = new TypePramotion();
-		t.add(14, 4);
+		t.add(14, 14l);
 
 	}
 

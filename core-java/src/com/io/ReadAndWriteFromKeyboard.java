@@ -9,9 +9,8 @@ import java.io.InputStreamReader;
 public class ReadAndWriteFromKeyboard {
 
 	public static void main(String[] args) throws IOException {
-
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		FileWriter fw = new FileWriter("C://Users//hp//Desktop//IO/kapill",true);
+		FileWriter fw = new FileWriter("C://Users//hp//Desktop//IO/kapill", true);
 
 		System.out.println("enter here.....");
 

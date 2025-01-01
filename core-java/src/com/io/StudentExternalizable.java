@@ -8,17 +8,15 @@ import java.io.ObjectOutput;
 
 public class StudentExternalizable implements Externalizable {
 
-	transient int id;
+    int id;
 	public String name;
 
-	public StudentExternalizable() {
-		System.out.println("okokok");
+	public StudentExternalizable() {	
 	}
 
 	public StudentExternalizable(int id, String name) {
-
 		this.id = id;
-		this.name = name;
+		//this.name = name;
 
 	}
 
@@ -29,10 +27,9 @@ public class StudentExternalizable implements Externalizable {
 	public String getName() {
 		return name;
 	}
-
+	
 	@Override
 	public void writeExternal(ObjectOutput out) throws IOException {
-
 		out.writeObject(name);
 		out.writeInt(id);
 
@@ -43,7 +40,12 @@ public class StudentExternalizable implements Externalizable {
 
 		name = (String) in.readObject();
 		id = in.readInt();
-
+	}
+	
+	@Override
+	public String toString() {
+		
+		return "id = "+id+" name = "+name;
 	}
 
 }
