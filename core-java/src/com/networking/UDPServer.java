@@ -22,9 +22,8 @@ public class UDPServer {
 		
 		System.out.println("Received from client: " + received);
 
-		String response = "Hello from UDP Server!";
 		
-		bt = response.getBytes();
+		bt = "Hello from UDP Server!".getBytes();
 
 		packet = new DatagramPacket(bt, bt.length, packet.getAddress(), packet.getPort());
 		

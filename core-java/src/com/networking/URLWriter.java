@@ -1,6 +1,4 @@
-
 package com.networking;
-
 
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
@@ -50,7 +48,5 @@ public class URLWriter {
 		}
 
 		in.close();
-
 	}
-
 }

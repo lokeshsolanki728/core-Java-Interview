@@ -23,8 +23,8 @@ public class URLReader {
         Scanner in = new Scanner(iStr);
 
         while (in.hasNext()) {
-            String html = in.nextLine();
-            System.out.println(html);
+           
+            System.out.println( in.nextLine());
         }
 
         // Close the Scanner

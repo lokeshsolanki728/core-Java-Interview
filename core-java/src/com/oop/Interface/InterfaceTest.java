@@ -1,5 +1,10 @@
 package com.oop.Interface;
 
+/**
+ * @author lokesh solanki
+ * 
+ *
+ */
 public class InterfaceTest implements Interfacee,Interface2{
 
 	@Override
@@ -16,7 +21,7 @@ public class InterfaceTest implements Interfacee,Interface2{
 
 		Interfacee b = new InterfaceTest();
 		System.out.println(b.sum(10, 20));
-		//System.out.println(b.sum(11, 22, 33));
+		// System.out.println(b.sum(11, 22, 33));
 		System.out.println(b.a);
 		Interface2 bb = new InterfaceTest();
 		System.out.println(bb.sum(1, 2, 4));

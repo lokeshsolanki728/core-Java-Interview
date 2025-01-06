@@ -3,8 +3,10 @@ package com.oop.shapeArrayWOC;
 
 /**
  * @author lokesh solanki
- *the class full name is Shape Array without constructor
- *insted of constructor we use getter and setter 
+ * 		   the class full name is Shape Array without constructor
+ *         Instead of constructor we use getter and setter. in this class sir ask
+ *         why we use type casting so the answer is we typecasting the classes for
+ *         accessing their attributes and methods
  */
 public class TestShape {
 

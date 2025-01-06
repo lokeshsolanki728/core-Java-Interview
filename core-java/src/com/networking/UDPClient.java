@@ -23,9 +23,8 @@ public class UDPClient {
 		packet = new DatagramPacket(bt, bt.length);
 
 		socket.receive(packet);
-
-		String received = new String(packet.getData(), 0, packet.getLength());
-		System.out.println("Quote of the Moment: " + received);
+		String message = new String(packet.getData()).trim();
+		System.out.println("Quote of the Moment: " + message);
 
 		socket.close();
 		System.out.println("Client closed.");
