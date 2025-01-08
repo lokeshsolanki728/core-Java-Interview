@@ -10,7 +10,7 @@ public class URLReader {
     public static void main(String[] args) throws Exception {
         // Using a simpler URL that doesn't require special headers or authentication
         URL u = new URL("https://erp.sunilos.com/NCSA/#/Test");
-
+        
         System.out.println("Protocol: " + u.getProtocol());
         System.out.println("Host Name: " + u.getHost());
         System.out.println("Port Number: " + u.getPort());

@@ -1,10 +1,14 @@
-
 package com.oops;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author lokesh solanki
+ * this is expert class 
+ * its class encapsulation
+ */
 public class Person {
 
 	public int id;
@@ -46,10 +50,7 @@ public class Person {
 		Person p = new Person();
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-
 		p.setDob(sdf.parse("2004-04-04"));
-		;
-
 		p.setName("amit shah");
 		p.setId(10);
 

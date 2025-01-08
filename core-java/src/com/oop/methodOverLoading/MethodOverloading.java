@@ -1,5 +1,9 @@
 package com.oop.methodOverLoading;
 
+/**
+ * @author lokesh solanki
+ * same same but difflant no money no honey
+ */
 public class MethodOverloading {
 
 	public int sum(int a, int b) {

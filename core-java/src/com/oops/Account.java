@@ -1,5 +1,3 @@
-
-
 package com.oops;
 
 public class Account {
@@ -15,23 +13,21 @@ public class Account {
 	}
 
 	public void deposite(int amt) {
-
-//		System.out.println("Total balance" + balance);
-//		System.out.println("Deposite Amt" + amt);
-		balance = balance + amt;
-		System.out.println("After Deposite Amt" + balance);
+		System.out.println("Total balance" + getBalance());
+		System.out.println("Deposite Amt" + amt);
+		setBalance(getBalance() + amt);
+		System.out.println("After Deposite Amt" + getBalance());
 	}
 
 	public void withdrawal(int amt) {
 
-		if ((balance - 2000) < amt) {
-			System.out.println("low balance");
-		} else {
-
-			System.out.println("Total balance" + balance);
+		if (getBalance() > amt) {
+			System.out.println("Total balance" + getBalance());
 			System.out.println("Withdrawl Amt" + amt);
-			balance = balance - amt;
-			System.out.println("After Withdrawl Amt" + balance);
+			setBalance(getBalance() - amt);
+			System.out.println("After Withdrawl Amt" + getBalance());
+		} else {
+			System.out.println("paisa ni h mere pass...");
 		}
 	}
 
