@@ -2,7 +2,7 @@ package com.oops;
 
 public class Account {
 
-	public double balance;
+	private double balance;
 
 	public double getBalance() {
 		return balance;

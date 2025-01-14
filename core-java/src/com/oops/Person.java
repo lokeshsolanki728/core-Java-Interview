@@ -11,9 +11,9 @@ import java.util.Date;
  */
 public class Person {
 
-	public int id;
-	public String name;
-	public Date dob;
+	private  int id;
+	private String name;
+	private Date dob;
 
 	public static final int AVG = 20;
 
