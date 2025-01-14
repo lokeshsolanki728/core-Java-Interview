@@ -2,6 +2,7 @@ package com.string;
 
 public class UpperCase {
 	//UpperCase withOut built in method
+	// isko sawan sir ni banwate hay
 	public static void main(String[] args) {
 		String s = "lokesh";
 		String val = "";

@@ -1,6 +1,7 @@
 package com.string;
 
 public class PalindromeString {
+	// es code ko sawan sir ni banwate h
 	public static void main(String[] args) {
 		String s = "abcba";
 		String ss="";
