@@ -2,8 +2,8 @@ package com.exception;
 
 public class CheckedExceptionn {
 	/**
-	 * in this class sir ask if we dont use try catch so what heppen 
-	 * you jast say, we throws the Exception on main method
+	 * in this class sir ask if we don't use try catch so what happen 
+	 * you just say, we throws the Exception on main method
 	 */
 	public static void main(String[] args)  {
 		

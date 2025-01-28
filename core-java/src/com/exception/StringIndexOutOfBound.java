@@ -3,7 +3,7 @@ package com.exception;
 
 public class StringIndexOutOfBound {
 	public static void main(String[] args) {
-		String s = "amit";
+		String s = "Lokesh";
 		try {
 				System.out.println(s.charAt(8));
 			

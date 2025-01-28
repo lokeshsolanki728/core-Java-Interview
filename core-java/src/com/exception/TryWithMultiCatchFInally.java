@@ -3,22 +3,26 @@ package com.exception;
 
 public class TryWithMultiCatchFInally {
 	/**
-	 * in this class sir ask many cross question ok
+	 * in this class sir ask many cross question 
+	 * like how we stop the execution of catch block and finally block
+	 * some tricky question ok
 	 */
 	public static void main(String[] args) {
-		int a=10;
-		String s = "abc";
+		int a=5;
+		String s = null;
 		try {
 			System.out.println(a/5);
 			System.out.println(s.length());
-			
+			// System.exit(0);
 		} catch (ArithmeticException e) {
 			System.out.println(e);
-			//System.exit(0);
-
-		} catch (StringIndexOutOfBoundsException e) {
-			System.out.println(e);
 			// System.exit(0);
+
+		} catch (NullPointerException e) {
+			System.out.println(e);
+			 //System.exit(0);
+		}finally {
+			System.out.println("okok");
 		}
 	
 	}
