@@ -1,6 +1,7 @@
 package com.exception;
 public class Test {
     public static void main(String[] args) {
+	    // ye class nhi bnani h pr 1 bar chla ke dekh lena retrun type kese override hora h 
         System.out.println(test());
     }
 
