@@ -15,8 +15,7 @@ public class TestContestWinner {
 		l.add(new ContestWinner("okok", "124965498"));
 		l.add(new ContestWinner("IamOk", "65154488485"));
 
-		l.stream()
-		.map(e -> (e.getName() + " " + e.getPhoneNo()))
+		l.stream().map(e -> (e.getName() + " " + e.getPhoneNo()))
 		.distinct()
 		.collect(Collectors.collectingAndThen(Collectors.toList(), c -> {
 		 Collections.shuffle(c);

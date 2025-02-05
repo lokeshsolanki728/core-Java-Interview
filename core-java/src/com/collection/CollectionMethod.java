@@ -3,14 +3,12 @@ package com.collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.stream.Collectors;
 
 public class CollectionMethod {
 
 	public static void main(String[] args) {
-		Collection c = new ArrayList();
-		Collection c1 = new ArrayList();
+		Collection<Integer> c = new ArrayList<Integer>();
+		Collection <Integer>c1 = new ArrayList<Integer>();
 
 		c1.add(55);
 		c1.add(10);

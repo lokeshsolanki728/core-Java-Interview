@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class SetDuplicateAnotherArrayList {
 	public static void main(String[] args) {
-		List l = new ArrayList();
+		List<Integer> l = new ArrayList<>();
 		l.add(2);
 		l.add(2);
 		l.add(1);

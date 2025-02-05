@@ -17,39 +17,44 @@ public class MapInterface {
 		m.put(5, "e");
 
 		System.out.println(m.size());
+		m.replace(2, "bb");
+		m.putIfAbsent(6, "f");
 		System.out.println(m.isEmpty());
 		System.out.println(m.get(5));
-		
+
 		System.out.println(m.containsKey(4));
 		System.out.println(m.containsValue("d"));
 		System.out.println("+++++++++++++++++++++++++++++++++");
 
 		TreeMap t = new TreeMap();
 
-		t.put(1, "kpail");
-		t.put(2, "raj");
-		t.put(3, "prs");
+		t.put(1, "lokesh nikhil ka papa hay");
+		t.put(2, "nikhil choduu");
+		t.put(3, "ilh");
 		t.put(4, "dp");
 		t.put(5, "e");
+
 		System.out.println(t.firstKey());
 		System.out.println(t.lastKey());
-
+		System.out.println(t.pollLastEntry());
+		System.out.println(t.pollFirstEntry());
+		System.out.println(t.higherKey(2));
+		System.out.println(t.lowerKey(5));
 		System.out.println(t.firstEntry());
 		System.out.println(t.lastEntry());
-		System.out.println(t.pollFirstEntry());
-System.out.println(t);
+
+		System.out.println(t);
 		System.out.println("==============================================");
 
 		LinkedHashMap l = new LinkedHashMap();
 		l.put(1, "kgn");
 		l.put(2, "jtn");
 		l.put(3, "indore");
-		l.put(2, "kpail");
-		l.put(5, "raj");
+		l.put(2, "lokesh");
+		l.put(5, "solan");
 
-		System.out.println(l.get(2));
-		System.out.println(l.containsKey(3));
-		System.out.println(l.containsValue("kgn"));
+		l.replace(1, "new kgn");
+		l.remove(3);
 		System.out.println(l.entrySet());
 		System.out.println(l.keySet());
 		System.out.println(l.values());

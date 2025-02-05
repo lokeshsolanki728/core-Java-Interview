@@ -10,8 +10,7 @@ public class SteamStartWithT {
 
 		List<String> list = Arrays.asList("raj", "kaj", "kapil", "Kapil","Kapil");
 
-		list.stream().map(e -> e.toUpperCase()).filter(e -> e.startsWith("K")).distinct().sorted()
-				.forEach(System.out::println);
+		list.stream().map(e -> e.toUpperCase()).filter(e -> e.startsWith("K")).distinct().sorted().forEach(System.out::println);
 		
 		
 		

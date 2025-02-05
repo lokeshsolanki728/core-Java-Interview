@@ -2,14 +2,13 @@ package com.collection;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 public class DequeInterface{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Deque dequ = new ArrayDeque();
+		Deque<Integer> dequ = new ArrayDeque<Integer>();
 		//Deque dequ1 = new LinkedList();
 		
 		dequ.offer(100);

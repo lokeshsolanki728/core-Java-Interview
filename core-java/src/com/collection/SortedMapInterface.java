@@ -7,7 +7,7 @@ import java.util.TreeMap;
 public class SortedMapInterface {
 	
 	public static void main(String[] args) {
-		SortedMap s=new TreeMap();
+		SortedMap<Integer,String> s=new TreeMap<>();
 		s.put(1, "one");
 		s.put(2, "two");
 		s.put(5, "three");

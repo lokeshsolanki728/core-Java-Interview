@@ -13,8 +13,7 @@ public class EmpNameTest {
 		l.add(new Emp(2, "bhokii"));
 		l.add(new Emp(8, "nokii"));
 
-		l.stream().sorted(Comparator.comparing(Emp::getName))
-				.forEach(e -> System.out.println(e.getId() + " = " + e.getName()));
+		l.stream().sorted(Comparator.comparing(Emp::getName)).forEach(e -> System.out.println(e.getId() + " = " + e.getName()));
 		
 
 	}

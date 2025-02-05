@@ -3,38 +3,42 @@ package com.collection.equalHashCode;
 import java.util.*;
 
 public class EqualHashCodeTest1 {
-	public static void main(String[] args) {
-		EqualHashCode e = new EqualHashCode(100, "lokesh", 500);
-		EqualHashCode e1 = new EqualHashCode(100, "lokesh", 500);
-		EqualHashCode e2 = new EqualHashCode(2, "lokesh", 100);
+    public static void main(String[] args) {
+        EqualHashCode e1 = new EqualHashCode(100, "lokesh", 500);
+        EqualHashCode e2 = new EqualHashCode(100, "lokesh", 500);
+        EqualHashCode e3 = new EqualHashCode(2, "lokesh", 100);  
 
-		List l = new ArrayList();
-		l.add(e1);
-		System.out.println(l);
+        System.out.println("e1.equals(e2): " + e1.equals(e2)); 
+        System.out.println("e1.equals(e3): " + e1.equals(e3));
 
-		l.add(e1);
-		System.out.println(l);
+        // ********** LIST DEMONSTRATION **********
+        List<EqualHashCode> list = new ArrayList<>();
+        list.add(e1);
+        list.add(e2); // Duplicate object, List allows duplicates
 
-		System.out.println("setttttttttt");
-		Set s = new HashSet();
-		s.add(e);
-		System.out.println(s);
-		
-		s.add(e1);
-		System.out.println(s);
-		//s.remove(e);
-		s.add(e2);
-		System.out.println(s);
+        System.out.println("\nList contents:");
+        System.out.println(list); // Both objects will be printed
 
-		System.out.println("mapppppppp");
-		Map m = new HashMap();
+        // ********** SET DEMONSTRATION **********
+        Set<EqualHashCode> set = new HashSet<>();
+        set.add(e1);
+        set.add(e2); // Since e1.equals(e2), only one instance will be stored
+        set.add(e3); // Different object, so it will be added
 
-		m.put(1, e);
-		m.put(2, e1);
-		m.put(3, e2);
-		System.out.println(m + "hhhh");
+        System.out.println("\nSet contents:");
+        System.out.println(set); // Only two unique objects should be printed
 
-		m.remove(2);
-		System.out.println(m);
-	}
+        // ********** MAP DEMONSTRATION **********
+        Map<Integer, EqualHashCode> map = new HashMap<>();
+        map.put(1, e1);
+        map.put(2, e2); // Key is different, but value is equal to e1
+        map.put(3, e3); // Different object
+
+        System.out.println("\nMap contents:");
+        System.out.println(map);
+
+        System.out.println("\nRemoving key 2...");
+        map.remove(2); // Removing second entry
+        System.out.println(map);
+    }
 }

@@ -6,7 +6,7 @@ import java.util.Vector;
 
 public class EnumerationEx {
     public static void main(String[] args) {
-        Vector v = new Vector();
+        Vector<Integer> v = new Vector<Integer>();
         v.add(1);
         v.add(2);
         v.add(3);
