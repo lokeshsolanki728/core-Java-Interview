@@ -6,9 +6,14 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
+/**
+ * @author lokesh solanki
+ * in this class sir remove Transient keyword and ask output 
+ *
+ */
 public class StudentExternalizable implements Externalizable {
 
-    int id;
+    transient int id;
 	public String name;
 
 	public StudentExternalizable() {	
@@ -16,7 +21,7 @@ public class StudentExternalizable implements Externalizable {
 
 	public StudentExternalizable(int id, String name) {
 		this.id = id;
-		//this.name = name;
+		this.name = name;
 
 	}
 

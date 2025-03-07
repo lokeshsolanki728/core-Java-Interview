@@ -3,6 +3,11 @@ package com.io;
 
 import java.io.Serializable;
 
+/**
+ * @author lokesh solanki
+ * in this class sir remove Transient keyword and ask output
+ *
+ */
 public class StudentSerializable implements Serializable {
 
 	transient int id;

@@ -52,6 +52,10 @@ public class MapInterface {
 		l.put(3, "indore");
 		l.put(2, "lokesh");
 		l.put(5, "solan");
+		//
+		//
+		//
+		//
 
 		l.replace(1, "new kgn");
 		l.remove(3);
