@@ -1,7 +1,7 @@
 package com.thread;
 class SharedResource {
     private boolean flag = false;
-
+    // Sawan sir ye code nahi banwate h
     // Method where threads will wait
     public synchronized void waitingMethod() {
         System.out.println(Thread.currentThread().getName() + " is waiting...");
